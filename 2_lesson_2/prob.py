@@ -42,8 +42,9 @@ plt.boxplot(x)
 plt.savefig("boxplot.png")
 
 # Creating a histogram
+plt.figure()
 plt.hist(x, histtype='bar')
-plt.savefig("his.png")
+plt.savefig("histogram.png")
 
 
 # QQplot
@@ -58,5 +59,5 @@ plt.show()
 
 plt.figure()
 graph_qq = stats.probplot(x, dist="norm", plot=plt)
-plt.show()
 plt.savefig("qq_plot.png")
+plt.show()
